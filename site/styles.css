@@ -10,7 +10,9 @@
     font-family: aileron-normal;
     src: url("./assets/fonts/Aileron-Regular.otf") format("opentype");
 }
-
+* {
+    color: white;
+  }
 body {
     position: absolute;
     top: 0;
@@ -30,18 +32,20 @@ body {
 }
 #loadingAnim {
     position: absolute;
-    top: 30%;
+    top: 75%;
     left: 47%;
     width: 3%;
     height: auto;
 }
 #loadingAnimBee {
-    margin-top: 15%;
-    margin-left: 45%;
+    top: 20%;
+    left: 35%;
     width: 15%;
     height: auto;
 }
 #loadingSlashText {
+    position: absolute;
+    top: 80%;
+    left: 50%;
     font-family: aileron-light, sans-serif;
-    color: white;
 }
