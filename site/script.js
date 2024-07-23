@@ -1,6 +1,8 @@
 var splashtext = document.getElementById("loadingSplashText");
 splashtext.innerHTML = "loading..."
 
+var loadingOverlay = document.getElementById("loadingOverlay");
+
 
 
 function init() {
@@ -31,6 +33,8 @@ function init() {
 
         document.body.appendChild(bannerImage);
         document.body.appendChild(sideBar);
+
+        loadingOverlay.remove();
     });
 }
 
