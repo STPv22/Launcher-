@@ -17,6 +17,8 @@ function init() {
         top: 0;
         background-color: rgb(24, 24, 24);
         border: none;`;
+    
+    var something = "s";
 
     //testing
     document.addEventListener("DOMContentLoaded", (event) => {

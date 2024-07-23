@@ -33,13 +33,14 @@ body {
 #loadingAnim {
     position: absolute;
     top: 75%;
-    left: 47%;
+    left: 48.5%;
     width: 3%;
     height: auto;
 }
 #loadingAnimBee {
+    position: absolute;
     top: 20%;
-    left: 35%;
+    left: 42.5%;
     width: 15%;
     height: auto;
 }
