@@ -1,28 +1,47 @@
+@font-face {
+    font-family: aileron-light;
+    src: url("./assets/fonts/Aileron-Light.otf");
+}
+@font-face {
+    font-family: aileron-thin;
+    src: url("./assets/fonts/Aileron-Thin.otf");
+}
+@font-face {
+    font-family: aileron-normal;
+    src: url("./assets/fonts/Aileron-Regular.otf");
+}
+
 body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
     background-color: rgb(24, 24, 24);
 }
 #loadingOverlay {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
     background-color: rgb(24, 24, 24);
 }
 #loadingAnim {
     position: absolute;
     top: 50%;
-    left: 50%;
-    width: 10%;
+    left: 45%;
+    width: 5%;
     height: auto;
 }
 #loadingAnimBee {
     position: absolute;
     top: 30%;
-    left: 50%;
-    width: 10%;
+    left: 35%;
+    width: 15%;
     height: auto;
+}
+#loadingSlashText {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    width: 5%;
+    font-family: aileron-light, sans-serif;
+    color: white;
 }
