@@ -29,17 +29,16 @@ body {
     background-color: rgb(24, 24, 24);
 }
 #loadingAnim {
-    position: absolute;
-    top: 50%;
-    left: 45%;
-    width: 5%;
+    margin-top: 15%;
+    margin-left: 47%;
+    width: 3%;
     height: auto;
 }
 #loadingAnimBee {
     position: absolute;
-    top: 30%;
-    left: 35%;
-    width: 15%;
+    margin-top: 30%;
+    margin-left: 35%;
+    width: 10%;
     height: auto;
 }
 #loadingSlashText {
