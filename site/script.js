@@ -49,7 +49,7 @@ function init() {
 
         navbar.appendChild(playOption);
         navbar.appendChild(installationOption);
-        document.body.appendChild(headerList);
+        document.body.appendChild(navbar);
         document.body.appendChild(bannerImage);
         document.body.appendChild(sideBar);
 
