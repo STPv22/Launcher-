@@ -1,6 +1,3 @@
-var splashtext = document.getElementById("loadingSplashText");
-splashtext.innerHTML = "loading..."
-
 var loadingOverlay = document.getElementById("loadingOverlay");
 
 
@@ -18,19 +15,41 @@ function init() {
         position: fixed;
         left: 0;
         top: 0;
+        width: 20%;
+        height: 100%;
         background-color: rgb(24, 24, 24);
         border: none;`;
+
+    var navbar = document.createElement("ul");
+    navbar.style = `
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+        overflow: hidden;
+        `;
+
+    var playOption = document.createElement("li");
+    playOption.innerHTML = "<a>Play</a>";
+    playOption.style = `
+        float: left;
+
+        `;
+
+    var installationOption = document.createElement("li");
+    installationOption.innerHTML = "<a>Installations</a>"
+
     
     var bannerImage = document.createElement("img");
     bannerImage.src = "./assets/banner.png";
     bannerImage.style = `
-        width: 100%;
+        width: 80%;
         `;
 
-    //testing
     document.addEventListener("DOMContentLoaded", (event) => {
-        console.log("DOM fully loaded and parsed");
 
+        navbar.appendChild(playOption);
+        navbar.appendChild(installationOption);
+        document.body.appendChild(headerList);
         document.body.appendChild(bannerImage);
         document.body.appendChild(sideBar);
 
