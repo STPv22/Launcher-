@@ -7,7 +7,7 @@ function init() {
     document.body.style.overflowX = "hidden";
     document.body.style.overflowY = "scroll";
     document.body.style.backgroundColor = "rgb(50, 50, 50)";
-    document.body.style.left = "20%";
+    document.body.style.left = "19%";
 
     //create elements for launcher
     var sideBar = document.createElement("div");
@@ -44,6 +44,13 @@ function init() {
         width: 80%;
         margin-left: 0px;
         margin-top: 15px;
+        `;
+    var playBar = document.createElement("div");
+    playBar.style = `
+        margin: 0;
+        width: 80%;
+        height 10%;
+        background-color: black;
         `;
 
     document.addEventListener("DOMContentLoaded", (event) => {
