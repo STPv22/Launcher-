@@ -29,20 +29,21 @@ function init() {
         `;
 
     var playOption = document.createElement("li");
-    playOption.innerHTML = "<a>Play</a>";
+    playOption.innerHTML = `<a href="" style="font-weight: bold; margin: 15px; display: block;">Play</a>`;
     playOption.style = `
         float: left;
-
         `;
 
     var installationOption = document.createElement("li");
-    installationOption.innerHTML = "<a>Installations</a>"
+    installationOption.innerHTML = `<a href="" style="margin: 15px; display: block;">Installations</a>`;
 
     
     var bannerImage = document.createElement("img");
     bannerImage.src = "./assets/banner.png";
     bannerImage.style = `
         width: 80%;
+        margin-left: 0px;
+        margin-top: 15px;
         `;
 
     document.addEventListener("DOMContentLoaded", (event) => {
