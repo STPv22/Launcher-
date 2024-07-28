@@ -7,7 +7,7 @@ function init() {
     document.body.style.overflowX = "hidden";
     document.body.style.overflowY = "scroll";
     document.body.style.backgroundColor = "rgb(50, 50, 50)";
-    document.body.style.left = "19%";
+    document.body.style.left = "20%";
 
     //create elements for launcher
     var sideBar = document.createElement("div");
@@ -23,6 +23,7 @@ function init() {
     var navbar = document.createElement("ul");
     navbar.style = `
         list-style-type: none;
+        text-decoration: none;
         padding: 0px;
         margin: 0px;
         overflow: hidden;
@@ -52,14 +53,27 @@ function init() {
         height 10%;
         background-color: black;
         `;
+    
+    var versionDropdownMenu = document.createElement("div");
+    versionDropdownMenu.style = `
+        margin: 0;
+        width: 10%;
+        height: 100%;
+        box-sizing: border-box;
+    `;
+    versionDropdownMenu.innerHTML = "<h4><strong>Latest Release</strong></h4><br><p>u35</p>";
+
 
     document.addEventListener("DOMContentLoaded", (event) => {
 
+        document.body.appendChild(sideBar);
         navbar.appendChild(playOption);
         navbar.appendChild(installationOption);
         document.body.appendChild(navbar);
         document.body.appendChild(bannerImage);
-        document.body.appendChild(sideBar);
+        document.body.appendChild(playBar);
+         playBar.appendChild(versionDropdownMenu);
+
 
         loadingOverlay.remove();
     });
