@@ -7,7 +7,7 @@ function init() {
     document.body.style.overflowX = "hidden";
     document.body.style.overflowY = "scroll";
     document.body.style.backgroundColor = "rgb(50, 50, 50)";
-    document.body.style.left = "20%";
+    document.body.style.left = "21%";
 
     //create elements for launcher
     var sideBar = document.createElement("div");
